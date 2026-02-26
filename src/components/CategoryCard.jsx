@@ -42,16 +42,16 @@ export default function CategoryCard({ category, machineId }) {
       to={`/maquinas/${machineId}/${category.id}`}
       className="bg-white rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 p-6 flex items-start gap-4 group"
     >
-      <div className="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-700 group-hover:text-white transition-colors duration-200">
+      <div className="w-10 h-10 rounded-xl bg-green-50 text-green-600 flex items-center justify-center flex-shrink-0 group-hover:bg-green-600 group-hover:text-white transition-colors duration-200">
         {icon}
       </div>
       <div className="flex-1 min-w-0">
-        <h3 className="font-semibold text-slate-900 mb-1 group-hover:text-blue-700 transition-colors">{category.title}</h3>
+        <h3 className="font-semibold text-slate-900 mb-1 group-hover:text-green-600 transition-colors">{category.title}</h3>
         <p className="text-slate-500 text-sm line-clamp-2 leading-relaxed">
           {category.content}
         </p>
       </div>
-      <svg className="w-4 h-4 text-slate-400 flex-shrink-0 mt-1 group-hover:text-blue-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg className="w-4 h-4 text-slate-400 flex-shrink-0 mt-1 group-hover:text-green-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
       </svg>
     </Link>

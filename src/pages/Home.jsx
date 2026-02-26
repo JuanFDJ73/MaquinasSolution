@@ -5,14 +5,14 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="mb-12 py-12 px-8 rounded-3xl bg-slate-900 text-white relative overflow-hidden">
+      <div className="mb-12 py-12 px-8 rounded-3xl bg-green-800 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-blue-500 -translate-y-1/2 translate-x-1/2" />
-          <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-blue-700 translate-y-1/2 -translate-x-1/2" />
+          <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-green-500 -translate-y-1/2 translate-x-1/2" />
+          <div className="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-green-600 translate-y-1/2 -translate-x-1/2" />
         </div>
         <div className="relative z-10 max-w-2xl">
           <div className="flex items-center gap-2 mb-4">
-            <span className="text-xs font-semibold text-blue-400 bg-blue-900/50 px-3 py-1 rounded-full uppercase tracking-wider">
+            <span className="text-xs font-semibold text-green-400 bg-green-900/50 px-3 py-1 rounded-full uppercase tracking-wider">
               DiverSolution
             </span>
             <span className="text-xs text-slate-400">Plataforma interna</span>
