@@ -26,7 +26,7 @@ export default function CategoryDetail() {
   }
 
   return (
-    <div className="max-w-4xl">
+    <div className="max-w-5xl">
       {/* Header */}
       <div className="mb-10">
         <div className="inline-flex items-center gap-2 text-xs font-semibold text-green-600 bg-green-50 px-3 py-1 rounded-full mb-4 uppercase tracking-wider">
