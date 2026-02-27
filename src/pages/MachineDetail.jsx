@@ -36,7 +36,7 @@ export default function MachineDetail() {
             Manual técnico
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-4 leading-tight">{machine.name}</h1>
-          <p className="text-slate-500 text-lg leading-relaxed">{machine.description}</p>
+          <p className="text-slate-500 text-xl leading-relaxed">{machine.description}</p>
           <div className="mt-6 flex items-center gap-3 text-sm text-slate-500">
             <div className="flex items-center gap-1">
               <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,11 +46,11 @@ export default function MachineDetail() {
             </div>
           </div>
         </div>
-        <div className="rounded-2xl overflow-hidden shadow-lg bg-slate-100 aspect-video">
+        <div className="rounded-2xl overflow-hidden shadow-lg bg-slate-100 flex items-center justify-center">
           <img
             src={machine.image}
             alt={machine.name}
-            className="w-full h-full object-cover"
+            className="w-full h-auto object-contain max-h-96"
             onError={(e) => {
               e.target.style.display = 'none';
             }}
@@ -60,7 +60,7 @@ export default function MachineDetail() {
 
       {/* Categories */}
       <div>
-        <h2 className="text-xl font-bold text-slate-900 mb-5 flex items-center gap-2">
+        <h2 className="text-2xl font-bold text-slate-900 mb-5 flex items-center gap-2">
           <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
           </svg>

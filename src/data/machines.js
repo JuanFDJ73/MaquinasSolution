@@ -9,7 +9,7 @@ export const machines = [
     id: "fiber",
     name: "Máquina Láser Fiber",
     description: "Sistema de corte y grabado láser de fibra óptica de alta precisión para materiales metálicos y no metálicos.",
-    image: imageLocal,
+    image: "/Fiber/Fiber1.jpeg",
     categories: [
       {
         id: "Maquina",
@@ -18,14 +18,60 @@ export const machines = [
           "Guía completa para el encendido, configuración y operación básica de la Máquina Láser Fiber. Es fundamental conocer cada paso del proceso para garantizar la seguridad del operador y la calidad del trabajo.",
         subSections: [
           {
-            title: "Encendido del equipo",
+            title: "Partes de la maquina",
             content:
-              "1. Verificar que el área de trabajo esté despejada.\n2. Encender el interruptor principal ubicado en el panel lateral.\n3. Esperar 30 segundos a que el sistema inicialice.\n4. Confirmar que el indicador verde esté activo.",
+              "1. Base\n2. Columna\n3. Laser\n4. Dispositivos externos",
             video: videoLocal,
-            extraContent: [],
+            extraContent: [
+              { type: "text", value: "🔷 **1. BASE**\nLa base es la estructura principal de soporte de la máquina. Sobre ella se apoyan todos los componentes mecánicos y electrónicos." },
+              { type: "text", value: "\n🔹 **Funciones principales:**\n- Soporta la columna y el cabezal láser.\n- Contiene el sistema eléctrico interno.\n- Permite la conexión con dispositivos externos.\n- Sirve como superficie de trabajo." },
+              { type: "text", value: "\n🔹 **Panel frontal:**\nEn la parte frontal se encuentran tres botones:\n- **POWER** (Encendido): Botón principal que enciende y apaga la máquina. Activa el sistema eléctrico interno y permite el funcionamiento del láser.\n- **UP** (Subir): Permite elevar la columna automáticamente.\n- **DOWN** (Bajar): Permite descender la columna automáticamente.\nEstos botones controlan el movimiento vertical para ajustar la altura del láser según el material." },
+              
+              { type: "image", value: "/Fiber/FiberPanelFrontal.jpeg" },
+              
+              { type: "text", value: "\n🔹 **Conexiones laterales / traseras:**\n- **Puerto USB:** Permite conectar la máquina al computador para enviar diseños desde el software (como EZCAD).\n- **Conector del pedal:** Entrada para el pedal externo, que permite activar el grabado manualmente.\n- **Conector de alimentación (Fuente de poder):** Entrada donde se conecta el cable de corriente eléctrica.\n- **Sistema de ventilación:** Rejillas laterales que permiten disipar el calor interno." },
+              
+              { type: "gallery", items: [
+                {value: "/Fiber/FiberPanelTrasero.jpeg", label: "Panel Trasero"},
+                {value: "/Fiber/FiberPanelLateral.jpeg", label: "Panel Lateral"}]},
+
+              { type: "text", value: "\n🔷 **2. COLUMNA**\nLa columna es la estructura vertical que sostiene el cabezal láser." },
+              
+              { type: "image", value: "/Fiber/FiberColumna.jpeg" },
+              
+              { type: "text", value: "\n🔹 **Función principal:**\nPermite ajustar la altura del láser para lograr el enfoque correcto sobre el material." },
+              { type: "text", value: "\n🔹 **Movimiento:**\nLa columna puede ajustarse de dos formas:\n- **Automáticamente:** Usando los botones UP (sube) y DOWN (baja) NOTA: tiene que estar prendida la maquina.\n- **Manual:** se puede ajustar manualmente para mayor precisión o en caso de mantenimiento." },
+        
+              { type: "gallery", items: [ 
+                {value: "/Fiber/FiberColumnaVideo.mp4", label: "Video Ajuste Columna Manual"},
+                {value: "/Fiber/FiberColumnaAutoVideo.mp4", label: "Video Ajuste Columna Automático"}]},
+
+              { type: "text", value: "\n🔹 **Importancia del ajuste:**\nEl correcto posicionamiento de la columna garantiza mejor calidad de grabado, mayor precisión y enfoque adecuado del punto láser." },
+              { type: "text", value: "\n🔷 **3. LÁSER (Cabezal Láser)**\nEs la parte superior horizontal de la máquina donde se encuentra el sistema óptico y el módulo láser." },
+              { type: "text", value: "\n🔹 **Componentes principales:**\n- Fuente láser interna.\n- Sistema galvo (espejos internos de alta velocidad).\n- Lente de enfoque.\n- Cable de conexión protegido (manguera corrugada)." },
+              
+              { type: "gallery", items: [
+                {value: "/Fiber/FiberLaser.jpeg", label: "Cabezal Láser"},
+                {value: "/Fiber/FiberLaserLente.jpeg", label: "Lente del Cabezal Láser"}]},
+
+              { type: "text", value: "\n🔹 **Función:**\nEl cabezal recibe la señal del software y dirige el haz láser hacia el material para realizar grabado, marcado, corte superficial (según potencia), numeración, logos y códigos." },
+              { type: "text", value: "\n🔹 **Funcionamiento:**\nEl sistema galvo mueve el rayo láser a gran velocidad en los ejes X y Y, permitiendo dibujar diseños con alta precisión." },
+              { type: "text", value: "\n🔷 **4. DISPOSITIVOS EXTERNOS**\nSon los elementos que se conectan a la máquina para permitir su funcionamiento y control." },
+              { type: "text", value: "\n🔹 **Cable USB:** Conecta la máquina al computador. Permite enviar archivos desde el software de grabado (como EZCAD). Es indispensable para el control digital del láser. Sin el USB conectado, la máquina no puede recibir diseños." },
+              
+              { type: "image", value: "/Fiber/FiberCable.jpg" },
+              
+              { type: "text", value: "\n🔹 **Pedal:** Permite activar el grabado manualmente. Funciona como disparador. Ideal para producción repetitiva. Recomendacion: Activar la casilla \"Continue mode\" en el software si va a usar el pedal." },
+              
+              { type: "image", value: "/Fiber/FiberPedal.jpeg" },
+              { type: "image", value: "/Fiber/FiberPedalRecomendacion.png " },
+
+              { type: "text", value: "\n🔹 **Usos del pedal:**\n- Iniciar grabado sin usar el mouse o teclado.\n- Trabajos en serie (ejemplo: marcar muchos colores).\n- Mayor rapidez en producción." },
+              { type: "text", value: "\n🔷 **Resumen General del Funcionamiento**\nSe conecta la máquina a la corriente. Se conecta el cable USB al computador. Se enciende con el botón POWER. Se ajusta la altura con UP y DOWN. Se envía el diseño desde el software con el parametro adecuado para el material. Se activa el grabado desde el software o con el pedal." },
+            ],
           },
           {
-            title: "Configuración inicial",
+            title: "Mantenimiento",
             content:
               "1. Abrir el software de control en la PC conectada.\n2. Cargar el archivo de diseño (.dxf o .ai).\n3. Configurar potencia y velocidad según el material.\n4. Realizar un recorrido en vacío antes del corte real.",
             video: videoLocal,
@@ -40,9 +86,9 @@ export const machines = [
             ],
           },
           {
-            title: "Finalización de trabajo",
+            title: "Cosas a tener en cuenta",
             content:
-              "1. Esperar a que el cabezal regrese a la posición de origen.\n2. Retirar la pieza con guantes de protección.\n3. Limpiar el área de residuos y polvo metálico.\n4. Apagar el equipo siguiendo el procedimiento de apagado seguro.",
+              "1. USAR GAFAS DE PROTECCIÓN LÁSER.\n2. NO DEJAR LA MÁQUINA ENCENDIDA SIN SUPERVISIÓN.\n3. CUIDADO CON OTROS MATERIALES DIFERENTES A METALES.\n4. MANTENER LAS MANOS ALEJADAS DEL HAZ LÁSER",
             video: videoLocal,
             extraContent: [
               { type: "text", value: lorem0 },

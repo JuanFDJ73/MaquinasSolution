@@ -46,8 +46,8 @@ export default function CategoryCard({ category, machineId }) {
         {icon}
       </div>
       <div className="flex-1 min-w-0">
-        <h3 className="font-semibold text-slate-900 mb-1 group-hover:text-green-600 transition-colors">{category.title}</h3>
-        <p className="text-slate-500 text-sm line-clamp-2 leading-relaxed">
+        <h3 className="font-bold text-lg text-slate-900 mb-1 group-hover:text-green-600 transition-colors">{category.title}</h3>
+        <p className="text-slate-500 text-base line-clamp-2 leading-relaxed">
           {category.content}
         </p>
       </div>
